@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-styles": "npx sass src/sass/styles.scss public/styles/styles.css",
+    "build-styles:dev": "npx sass src/sass/styles.scss public/styles/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "husky": "^8.0.3"
+  },
+  "dependencies": {
+    "sass": "^1.63.6"
   }
 }
